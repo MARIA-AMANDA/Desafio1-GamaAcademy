@@ -9,7 +9,7 @@
 
   "servers": [
     {
-      "url": "https://cadastrojobsnet.herokuapp.com",
+      "url": "http://localhost:5000",
       "description": "ambiente de desenvolvimento"
     }
   ],
