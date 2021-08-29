@@ -1,0 +1,110 @@
+{
+  "openapi": "3.0.0",
+
+  "info": {
+    "title": "Formúlario JobsNET",
+    "description": "API do formúlario de cadastro de candidatos",
+    "version": "0.0.1"
+  },
+
+  "servers": [
+    {
+      "url": "http://localhost:5000",
+      "description": "ambiente de desenvolvimento"
+    }
+  ],
+
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Cadastro de candidato",
+        "description": "Rota de cadastro de usuários",
+        "tags": ["candidato"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "datanasci": {
+                    "type": "number"
+                  },
+                  "cargo": {
+                    "type": "string"
+                  },
+                  "estadocivil": {
+                    "type": "string"
+                  },
+                  "sexo": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "endereco": {
+                    "type": "string"
+                  },
+                  "cep": {
+                    "type": "number"
+                  },
+                  "bairro": {
+                    "type": "string"
+                  },
+                  "estado": {
+                    "type": "string"
+                  },
+                  "cidade": {
+                    "type": "string"
+                  },
+                  "cel": {
+                    "type": "number"
+                  },
+                  "cel2": {
+                    "type": "number"
+                  },
+                  "identidade": {
+                    "type": "number"
+                  },
+                  "cpf": {
+                    "type": "number"
+                  },
+                  "veiculo": {
+                    "type": "string"
+                  },
+                  "habitacao": {
+                    "type": "string"
+                  }     
+                }
+              },
+              "examples": {
+                "exemplo de cadastro": {
+                  "value": {
+                    "nome": "João Santos",
+                    "datanasci": "09/09/1999",
+                    "cargo": "Assitente",
+                    "estadocivil": "Casado(a)",
+                    "sexo": "Masculino",
+                    "email": "joaosantos@gmail.com",
+                    "endereco": "Rua Vitorino Carmilo",
+                    "cep": "01153000",
+                    "bairro": "Barra Funda",
+                    "estado": "SP",                    
+                    "cidade": "São Paulo",
+                    "cel": "(11) 99999-9999",
+                    "cel2": "(11) 9888-8888",
+                    "identidade": "111111111",
+                    "cpf": "22222222222",
+                    "veiculo": "Sim",
+                    "habitacao": "A"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
